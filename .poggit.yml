@@ -1,0 +1,10 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/PJZ9n/ClearHUD
+build-by-default: true
+branches:
+  - master
+projects:
+  ClearHUD:
+    libs:
+      - src: pjz9n/resourcepacktools/ResourcePackTools
+        version: 2.2.0
+...

@@ -23,9 +23,20 @@ declare(strict_types=1);
 
 namespace pjz9n\clearhud;
 
+use pjz9n\resourcepacktools\generator\SimpleResourcePack;
+use pjz9n\resourcepacktools\manifest\Version;
+use pjz9n\resourcepacktools\ResourcePack;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase
 {
-    //
+    public function onEnable(): void
+    {
+        $path = $this->getDataFolder() . "pack.zip";
+        $pack = new SimpleResourcePack($this, new Version(1, 0, 0));
+        $pack->addFile("hud_tip_text_background.png", "textures/ui/hud_tip_text_background.png");
+        $pack->setPackIcon("grass.png");
+        $pack->generate($path);
+        ResourcePack::register($path);
+    }
 }

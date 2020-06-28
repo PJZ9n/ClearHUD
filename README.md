@@ -7,3 +7,6 @@
 
 ### After
 ![after](https://user-images.githubusercontent.com/38120936/85956310-1a0adb80-b9c0-11ea-9f5f-b5667739813c.png)
+
+### Special Thanks!
+- [No Tip Shadow](https://forum.mcbe.jp/resources/559/) by たくまっち
